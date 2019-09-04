@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require "yyy"
+
+Yyy.application.run
+
