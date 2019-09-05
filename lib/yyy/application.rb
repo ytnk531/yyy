@@ -1,13 +1,14 @@
 module Yyy
   class Application
-    def initialize(word: nil, n: nil)
+    def initialize(word: nil)
       @word = word || 'y'
-      @n = n
     end
 
     def run
+      buf = (@word + "\n") * (1024 * 32)
+
       loop do
-        puts @word
+        puts buf
       rescue Interrupt, StandardError
         abort
       end
