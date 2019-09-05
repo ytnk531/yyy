@@ -1,11 +1,19 @@
 module Yyy
   class Application
-    def initialize(word: nil)
-      @word = word || 'y'
+    def initialize(args: ARGV)
+      @str = str(args)
+    end
+
+    def str(words)
+      return "y\n" if words.size < 1
+      words.join(' ') + "\n"
     end
 
     def run
-      buf = (@word + "\n") * (1024 * 32)
+      bufsize = 1024 * 32
+      strsize = @str.length
+      amount = bufsize / (strsize + 1)
+      buf = @str * amount
 
       loop do
         puts buf
