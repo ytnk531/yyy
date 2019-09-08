@@ -3,24 +3,19 @@
 
 
 ## Installation
-
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'yyy'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
     $ gem install yyy
+    $ git clone
 
 ## Usage
+Gaining infinite 'y' to type
+    
+    $ yyy
+Or change string with
 
-TODO: Write usage instructions here
+    $ yyy alternavive_string
+Of cource we can use pipe like this.
+    
+    $ yyy | head -100
 
 ## Development
 
@@ -30,7 +25,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/yyy.
+Bug reports and pull requests are welcome on GitHub at https://github.com/ytnk531/yyy.
 
 ## License
 
