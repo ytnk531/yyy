@@ -3,19 +3,39 @@
 
 
 ## Installation
-    $ gem install yyy
-    $ git clone
+    $ git clone https://github.com/ytnk531/yyy
+    $ cd yyy
+    $ rake install
 
 ## Usage
-Gaining infinite 'y' to type
+Gaining infinite 'y'.
     
     $ yyy
-Or change string with
 
-    $ yyy alternavive_string
+Output
+```bash
+$ yyy
+y
+y
+y
+y
+y
+y
+y
+y
+y
+# (outputs 'y' until interuption)
+```
+Changing output string with passing the string as arguments.
+
+    $ yyy alternative_string1 alternative_string2...
 Of cource we can use pipe like this.
     
     $ yyy | head -100
+
+This is useful when you want to pass some dialogs automatically.
+
+    $ yyy | installation_script.sh
 
 ## Development
 
