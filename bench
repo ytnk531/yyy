@@ -1,4 +1,0 @@
-ruby -Ilib ./exe/yyy | pv | head -c 10M > /dev/null
-ruby -Ilib ./exe/yyy | pv | head -c 100M > /dev/null
-ruby -Ilib ./exe/yyy | pv | head -c 1G > /dev/null
-ruby -Ilib ./exe/yyy | pv | head -c 10G > /dev/null
